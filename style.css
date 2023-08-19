@@ -50,6 +50,10 @@ body{
     margin: 20px;
     font-weight: 400;
     font-size: 24px;
+    transition: all 0.7s ease;
+}
+.submit-button-button:hover{ 
+    background-color: #eeeeee;
 }
 .submit-button-after-edit{ 
     background-color: black;
