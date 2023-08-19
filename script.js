@@ -76,7 +76,7 @@ function onEdit(td){
     document.getElementById("age").value = selectedRow.cells[4].innerHTML;
     document.getElementById("Degree").value = selectedRow.cells[5].innerHTML;
     submitButton.classList.toggle("submit-button-after-edit"); 
-    submitButton.innerHTML = "Edit"; 
+    submitButton.innerHTML = "Edit Student"; 
 }
 
 function updateRec(formData){ 
@@ -106,8 +106,7 @@ let searchBAr = document.getElementById("myInput");
 
 searchBAr.addEventListener("keydown", function(event) {
     if (event.key === "Enter") {
-      // Do something when Enter key is pressed
-    //   alert("Enter key pressed!");
+
         let query = searchBAr.value.toLowerCase(); 
         
         if(query == formData["Name"].toLowerCase() || query == formData["Email"].toLowerCase() || query == formData["Degree"].toLowerCase()){ 
